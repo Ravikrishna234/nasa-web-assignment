@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.astronomy-navbar ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: rgb(4, 4, 4);
+    color: white;
+    justify-content: space-between;
+}
+.astronomy-navbar li {
+    list-style-type: none;
+    padding: 1rem;
+}
+.nasa-logo {
+    width: 100px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+.post {
+    margin-bottom: 20px;
+}
+.scrollimage {
+    cursor: pointer;
+}
+.post-image {
+    width: 100%;
+    height: 350px;
+}
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
+.post-image:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 140, 186, 0.5);
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .post-scroller-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .scroll_row {  
+    display: flex;
+  }
+  .scroll_col {
+    width: 100%;
+    padding: 20px;
+  }
+  .scroll_elements {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .element img {
+    width: 220px;
+    height: 120px;
+    padding: 10px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+/* Styles for mobile screens */
+  @media (max-width: 499px) {
+    .column {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    
+    .post-image {
+      height: 250px;
+    }
+    .scroll_col {
+        flex: 1 1 100%;
+      max-width: 100%;
+    }
+    .element img {
+         display: flex;
+        flex-wrap: wrap;
+         width:100%;
+         object-fit: cover;
+    }
+  }
+/* Styles for tablet screens */
+@media (min-width: 500px) and (max-width: 959px) {
+    
+    .column {
+      flex: 1 0 50%;
+      max-width: 100%;
+    }
+    
+    .post-image {
+      height: auto;
+    }
+    .scroll_col {
+        flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+/* Styles for desktop screens */
+@media (min-width: 960px) {
+    .container {
+        width: 100%;
+    }
+}

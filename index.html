@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+  	<script type="text/javascript" src="helper.js" defer></script>
+    <title>Document</title>
+</head>
+    <nav class="astronomy-navbar">
+        <ul>
+            <li><img src="nasa.jpg" alt="nasa-logo" class="nasa-logo" /><p>Ravi Krishna Dontula</p></li>
+            <li class="astronomy-navbar-toggle"><i class="fas fa-bars"></i></li>
+            <li class="astronomy-navbar-title">Astronomy Picture of the Day</li>
+        </ul>
+    </nav>
+<body>
+    <div id="loading-spinner" class="loading-spinner" style="display: none;">
+        <div class="loader"></div>
+    </div>
+    <div id="post_content" class="container">
+        <div class="column">
+            <div class="post">
+                <h2 id="post_title" class="title"></h2>
+                <b>Description</b><p id="post_description" class="description"></p>
+                <b>Author:</b><p id="post_author" class="author"></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="post-image">
+                <a id="post-entire" target="_blank" href="">
+                    <img id="post-spotlightimage" class="post-image" src="" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="post-scroller-container"></div>
+</body>
+</html>
